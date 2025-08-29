@@ -37,11 +37,10 @@ function Main() {
     <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4 space-y-10">
         <div className="text-center">
-          <h2 className="text-white text-4xl font-bold mb-4">Experience</h2>
+          <h2 className="text-white text-4xl font-bold mb-4">Experiencia</h2>
           <div className="w-20 h-1 bg-purple-500 mx-auto mb-8"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Browse through my recent projects and discover the solutions I've
-            built.
+            Busca sobre mis trabajos y soluciones
           </p>
         </div>
         {/* <ImageCard /> */}
