@@ -2,6 +2,8 @@
 import About from "../components/About.astro";
 import Hero from "../components/Hero.astro";
 import Main from "../components/Main";
+import Prototype from "../components/Prototype";
+import References from "../components/References";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 
@@ -15,6 +17,8 @@ import "../styles/global.css";
   <Hero />
   <About />
   <Main client:load />
+  <References client:load />
+  <Prototype client:load />
   <!-- <About />
 	 <About /> -->
 </Layout>
