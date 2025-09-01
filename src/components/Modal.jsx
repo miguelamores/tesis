@@ -41,15 +41,10 @@ function Modal({ job, onClose }) {
           </div>
 
           <div className="p-4 md:p-5 space-y-4">
-            <ul className="list-disc pl-3.5 flex flex-col gap-2">
-              {details?.map((detail, i) => (
-                <li key={i}>
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    {detail}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            <img
+              className="group-hover:scale-110 object-cover w-full h-full transition-transform duration-700"
+              src={details}
+            />
           </div>
         </div>
       </div>
