@@ -5,6 +5,14 @@
       <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
     </div>
     <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- <div class="w-full aspect-video rounded-xl overflow-hidden shadow-xl">
+        <iframe
+          src="https://drive.google.com/file/d/1abc123xyz/view?usp=sharing"
+          class="w-full h-full"
+          allow="autoplay"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div> -->
       <!-- <div>
                                 <div class="relative">
                                     <div class="relative w-full h-[400px] max-w-4xl mx-auto overflow-hidden rounded-xl shadow-2xl svelte-lp82vm">
@@ -65,9 +73,21 @@
                                     </div>
                                 </div>
                             </div> -->
-      <video class="h-full w-full" controls muted autoplay="false">
-        <source src="https://www.youtube.com/watch?v=uzmyNtR05OQ" />
-      </video>
+      <!-- <video class="h-full w-full" controls muted autoplay="false">
+        <source src="https://vimeo.com/1114870731?share=copy#t=0" />
+      </video> -->
+      <div
+        style="padding:56.25% 0 0 0;position:relative;"
+        class="h-full w-full"
+      >
+        <iframe
+          src="https://player.vimeo.com/video/1114870731?badge=0&autopause=0&player_id=0&app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          title="video"></iframe>
+      </div><script src="https://player.vimeo.com/api/player.js"></script>
       <div>
         <h3 class="text-2xl font-bold mb-4 text-white">Who am I?</h3>
         <p class="text-gray-300 mb-6">
