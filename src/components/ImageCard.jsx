@@ -1,4 +1,3 @@
-import { Image } from "astro:assets";
 import Label from "./Label";
 
 function ImageCard(job) {
@@ -7,12 +6,13 @@ function ImageCard(job) {
   return (
     <article className="group w-full shadow-lg/60 shadow-purple-600/30 relative rounded-xl bg-[#0f1725] text-white hover:scale-105 transition-transform duration-1000 overflow-hidden">
       <picture className="h-56 max-h-56 w-full overflow-hidden block">
-        {/* <Image src={img} /> */}
         <img
           className="group-hover:scale-110 object-cover w-full h-full transition-transform duration-700"
           src={img}
+          alt={title}
         />
       </picture>
+
       <div className="flex flex-col">
         <header className="p-5 flex items-center justify-between">
           <h2 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300 mb-2">
