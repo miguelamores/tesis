@@ -173,23 +173,41 @@ html {
 
 .carousel--scroll-buttons {
   &::scroll-button(*) {
-    position: fixed;
+    color: #b0b9c2;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    z-index: 1;
     position-anchor: --carousel;
-    font-family: "Material Symbols Outlined";
-    background-color: aliceblue;
-    border: none;
-    border-radius: 100px;
-    margin: 2px;
+    font-size: 1.25rem;
+    inline-size: 44px;
+    margin: 1rem;
+    font-family: Material Symbols Outlined;
+    line-height: 1;
+    font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    aspect-ratio: 1;
+    background: none;
+    border: 1px solid #495057;
+    border-radius: 1e5px;
+  }
+
+  &::scroll-button(*):not(:disabled):is(:hover, :focus-visible) {
+    border-color: #868e96;
+
+    scale: 1.1;
   }
 
   &::scroll-button(right) {
-    position-area: inline-end center;
-    content: "⮕" / "Scroll Right";
+    position-area: block-end span-inline-start;
+    content: "→" / "Scroll Right";
   }
 
   &::scroll-button(left) {
-    position-area: inline-start center;
-    content: "⬅" / "Scroll Left";
+    position-area: block-end span-inline-end;
+    content: "←" / "Scroll Left";
   }
 }
 
