@@ -1,7 +1,7 @@
 ---
 import About from "../components/About.astro";
+import Gallery from "../components/Gallery.astro";
 import Hero from "../components/Hero.astro";
-import Main from "../components/Main";
 import Prototype from "../components/Prototype";
 import References from "../components/References";
 import Layout from "../layouts/Layout.astro";
@@ -16,7 +16,8 @@ import "../styles/global.css";
   <!-- <Test /> -->
   <Hero />
   <About />
-  <Main client:load />
+  <Gallery />
+  <!-- <Main client:load /> -->
   <References client:load />
   <Prototype client:load />
   <!-- <About />

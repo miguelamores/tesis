@@ -67,8 +67,8 @@ export const references = [
     title: "CRUZ CHAKANA",
     content:
       "El uso de la cruz chakana en el diseño enriquece la experiencia del visitante: su forma escalonada orienta el recorrido, marca ritmos de atención y facilita una navegación intuitiva entre el museo, los talleres y los puntos de venta, prolongando la permanencia y elevando la calidad de la vivencia. Al mismo tiempo, potencia la legitimidad cultural del proyecto: al vincularse con un símbolo ancestral, se refuerza la percepción de autenticidad, respeto y diálogo entre tradición y modernidad, lo que contribuye a atraer tanto a comunidades locales como a turistas interesados en las identidades culturales.",
-    details: "../src/assets/danzante.png",
-    img: "../src/assets/danzante.png",
+    details: "../src/assets/cruz-detail.png",
+    img: "../src/assets/cruz.png",
     tags: ["Rojo", "Amarillo", "Verde", "Azul", "Sabiduría"],
   },
   {
@@ -76,8 +76,8 @@ export const references = [
     title: "GRADAS DEL SINCHAHUASÍN",
     content:
       "El conjunto de gradas del Sinchahuasín es un elemento fundamental en el paisaje urbano y cultural del cantón Pujilí. Este sistema, compuesto por aproximadamente 600 escalones, asciende hasta la cima de la colina del mismo nombre, formada naturalmente por procesos geológicos de acumulación de tierra y roca. La construcción de estas gradas se originó para facilitar el acceso peatonal a esta elevación, que ha sido históricamente un mirador y un lugar simbólico de encuentro.",
-    details: "../src/assets/danzante.png",
-    img: "../src/assets/danzante.png",
+    details: "../src/assets/gradas-detail.png",
+    img: "../src/assets/gradas.png",
     tags: ["Gradas", "Montaña", "Mirador", "Danzante"],
   },
 ];

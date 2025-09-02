@@ -22,7 +22,7 @@ function References() {
           <h2 className="text-white text-4xl font-bold mb-4">Referencias</h2>
           <div className="w-20 h-1 bg-purple-500 mx-auto mb-8"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Busca sobre mis trabajos y soluciones
+            La arquitectura es una forma de plasmar los sueños en el mundo real
           </p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-5 xl:gap-6 2xl:gap-8">

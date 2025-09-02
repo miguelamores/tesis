@@ -111,3 +111,121 @@
 html {
   scroll-behavior: smooth;
 }
+
+.carousel {
+  scroll-behavior: smooth;
+  inline-size: 90cqi;
+  list-style-type: none;
+  padding: 1rem;
+  scroll-padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+
+  anchor-name: --carousel;
+  container-type: inline-size;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  columns: 1;
+  /* block-size: 70vh; */
+  text-align: center;
+
+  &::column {
+    scroll-snap-align: center;
+  }
+}
+/* .carousel {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+
+  columns: 1;
+  block-size: 70vh;
+  text-align: center;
+
+  &::column {
+    scroll-snap-align: center;
+  }
+} */
+
+.carousel__slide {
+  /* width: auto;
+  height: 100%; */
+
+  container-type: scroll-state;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.carousel--scroll-buttons {
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    font-family: "Material Symbols Outlined";
+    background-color: aliceblue;
+    border: none;
+    border-radius: 100px;
+    margin: 2px;
+  }
+
+  &::scroll-button(right) {
+    position-area: inline-end center;
+    content: "⮕" / "Scroll Right";
+  }
+
+  &::scroll-button(left) {
+    position-area: inline-start center;
+    content: "⬅" / "Scroll Left";
+  }
+}
+
+.carousel--scroll-markers {
+  scroll-marker-group: after;
+
+  &::scroll-marker-group {
+    position: fixed;
+    position-anchor: --carousel;
+    position-area: block-end;
+    margin: 10px;
+
+    display: grid;
+    grid-auto-columns: 20px;
+    grid-auto-flow: column;
+    gap: 20px;
+  }
+
+  &::column::scroll-marker {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: #9810fa;
+    opacity: 0.7;
+    border-radius: 100%;
+  }
+  &::column::scroll-marker:target-current {
+    scale: 1.3;
+    opacity: 1;
+  }
+}
+
+.carousel__slide {
+  scroll-snap-align: center;
+}
+
+.carousel__slide > article {
+  inline-size: min(45ch, 90cqi);
+  background: #343a40;
+  border-radius: 1rem;
+  box-shadow: 0 3px 5px -2px hsl(220 40% 2% / calc(10% + 3%)),
+    0 7px 14px -5px hsl(220 40% 2% / calc(10% + 5%));
+  overflow: clip;
+  align-content: end;
+}
+
+.carousel__slide > article > img {
+  grid-area: 1 / 1;
+}
