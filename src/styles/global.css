@@ -254,6 +254,53 @@ html {
   align-content: end;
 }
 
-.carousel__slide > article > img {
+.carousel__slide > article img {
   grid-area: 1 / 1;
+}
+
+.gallery-figure {
+  display: grid;
+  place-items: end stretch;
+}
+
+.gallery-card {
+  & > figure {
+    > * {
+      grid-area: 1 / 1;
+    }
+  }
+}
+
+.gallery-caption {
+  max-inline-size: 100%;
+  display: grid;
+  justify-items: start;
+  gap: 0.5rem;
+  transition: transform 0.3s cubic-bezier(0.25, 0, 0.3, 1),
+    opacity 0.3s cubic-bezier(0.25, 0, 0.3, 1);
+  background: linear-gradient(to top, #000, 75%, #0000);
+  padding-inline: 1.5rem;
+  padding-block: 4rem 1rem;
+  text-align: left;
+
+  & > h5 {
+    color: #f8f9fa;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+
+  & > p {
+    color: #ced4da;
+    font-size: 1.1rem;
+  }
+}
+
+.carousel {
+  @media (prefers-reduced-motion: no-preference) {
+    @container not scroll-state(snapped: inline) {
+      figcaption {
+        transform: translateY(100%);
+      }
+    }
+  }
 }
