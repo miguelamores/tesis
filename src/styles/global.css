@@ -137,6 +137,16 @@ html {
     scroll-snap-align: center;
   }
 }
+
+.carousel {
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    inline-size: 50cqi;
+  }
+}
+
 /* .carousel {
   overflow-x: auto;
   overscroll-behavior-x: contain;
