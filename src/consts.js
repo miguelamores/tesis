@@ -68,7 +68,7 @@ export const references = [
     content:
       "El uso de la cruz chakana en el diseño enriquece la experiencia del visitante: su forma escalonada orienta el recorrido, marca ritmos de atención y facilita una navegación intuitiva entre el museo, los talleres y los puntos de venta, prolongando la permanencia y elevando la calidad de la vivencia. Al mismo tiempo, potencia la legitimidad cultural del proyecto: al vincularse con un símbolo ancestral, se refuerza la percepción de autenticidad, respeto y diálogo entre tradición y modernidad, lo que contribuye a atraer tanto a comunidades locales como a turistas interesados en las identidades culturales.",
     details: "../src/assets/cruz-detail.png",
-    img: "../src/assets/cruz.png",
+    img: "/images/cruz.png",
     tags: ["Rojo", "Amarillo", "Verde", "Azul", "Sabiduría"],
   },
   {
