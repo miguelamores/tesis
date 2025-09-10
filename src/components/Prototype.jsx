@@ -1,7 +1,5 @@
 import { useState } from "react";
-import Card from "./Card.jsx";
 import Modal from "./Modal";
-import Tag from "./Tag";
 import { prototypes } from "../consts.js";
 import ImageCard from "./ImageCard.jsx";
 
